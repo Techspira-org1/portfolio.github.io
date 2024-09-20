@@ -9,7 +9,7 @@ function closemenu(){
     sideMenu.style.transform = 'translateX(16rem)';
 }
 
-window.addEventListener('scroll',()=>{
+window.addEventListener('scroll', ()=>{
     if(scrollY > 50){
         navbar.classList.add('bg-white', 'bg-opacity-50', 'backdrop-blur-lg',
         'shadow-sm');
@@ -29,8 +29,9 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
   } else {
     document.documentElement.classList.remove('dark')
   }
+
   function toggleTheme(){
-        document.documentElement.classList.toggle('dark'); 
+        
     if (document.documentElement.classList.contains('dark')){
          localStorage.theme = 'dark';
     }else{
